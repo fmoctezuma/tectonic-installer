@@ -4,14 +4,3 @@ resource "openstack_blockstorage_volume_v2" "blockstorage" {
   description = "test vol00"
 }
 
-resource "openstack_blockstorage_volume_v2" "blockstorage" {
-  name        = "${var.cluster_name}-disk01"
-  size        = 5
-  description = "test vol01"
-}
-
-resource "openstack_blockstorage_volume_v2" "blockstorage" {
-  name        = "${var.cluster_name}-disk02"
-  size        = 5
-  description = "test vol02"
-}
