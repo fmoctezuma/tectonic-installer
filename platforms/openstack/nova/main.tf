@@ -145,3 +145,10 @@ module "secgroups" {
   cluster_name          = "${var.tectonic_cluster_name}"
   tectonic_experimental = "${var.tectonic_experimental}"
 }
+
+
+module "blockstorage" {
+  source                = "../../../modules/openstack/blockstorage"
+  cluster_name          = "${var.tectonic_cluster_name}"
+  tectonic_experimental = "${var.tectonic_experimental}"
+}
